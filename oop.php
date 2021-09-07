@@ -25,14 +25,24 @@ class EShop{
 
     public $site; //null
 
-    private $acquisti = [];
+    private $products = [];
+
+    private $users = [];
 
     public function _construct(string $nomeEShop, string $nomeSito) {
         $this->name = $nomeEShop;
         $this->site = $nomeSito;
     }
-    // public function addProdotto($)
+    public function addProdotto($product) {
+        $this->products [] = $product;
+    }
+
 }
+
+$shop = new EShop('UGO SHOP', 'Via D\'estinzione');
+$shop->addProdotto($TechProduct);
+var_dump($shop);
+
 
 // -----------------------------------------------------
 
@@ -47,7 +57,7 @@ class TechProduct extends Product {
     public $prezzo = 2500;
 
     public function _construct() {
-        $this->laber = 'RTX 3090';
+        $this->label = 'RTX 3090';
         $this->tipo = 'Prodotto Tech';
     }
 }
@@ -59,7 +69,7 @@ class SportProduct extends product {
     public $prezzo = 100;
 
     public function _construct() {
-        $this->laber = 'Guantoni 12OZ Leone';
+        $this->label = 'Guantoni 12OZ Leone';
         $this->tipo = 'Prodotto Sportivo';
     }
 
