@@ -31,6 +31,7 @@ class EShop{
         $this->name = $nomeEShop;
         $this->site = $nomeSito;
     }
+    // public function addProdotto($)
 }
 
 // -----------------------------------------------------
@@ -78,13 +79,13 @@ class PremiumUser {
 
 /*
 
-1. creare Eshop
-2. creare prodotti
-3. aggiungere all' Eshop
-4. creare l'utente
-5. creare l'utente premium
-6. inserire la carta di credito per ciascun utente
-7. utente normale acquista
-8. utente premium acquista con lo sconto
+1. creiamo l'eshop
+2. creiamo diversi prodotti
+3. aggiungiamoli all'eshop
+4. creaiamo l'utente normale
+5. creiamo un utente premium
+6. inseriamo le carte di credito per ciascun utente
+6. l'utente normale acquista un prodotto
+7. l'utente premium acquista un altro prodotto (e riceve lo sconto)
 
 */
