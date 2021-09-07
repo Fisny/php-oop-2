@@ -37,9 +37,12 @@ class EShop{
         $this->products [] = $product;
     }
 
+    public function addUtente($user) {
+        $this->users [] = $user;
+    }
 }
 
-$shop = new EShop('UGO SHOP', 'Via D\'estinzione');
+$shop = new EShop('UGO SHOP', 'Via D estinzione');
 $shop->addProdotto($TechProduct);
 var_dump($shop);
 
